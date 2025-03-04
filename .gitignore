@@ -1,0 +1,81 @@
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules folder
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore environment variables
+.env
+.env.local
+.env.*.local
+
+# Ignore build and dependency directories
+/dist/
+/build/
+/out/
+/coverage/
+
+# Ignore Python-related files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.whl
+*.venv/
+venv/
+ENV/
+*.egg-info/
+
+# Ignore Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore C/C++ output
+*.obj
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# Ignore logs and debug files
+*.log
+*.bak
+*.swp
+*.tmp
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Ignore macOS Finder files
+._*
+
+# Ignore compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.svg
+
+# Ignore specific file types (optional)
+/*.bak
+/*.tmp
