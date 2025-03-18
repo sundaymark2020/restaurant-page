@@ -38,7 +38,6 @@ items.forEach(itemText => {
 
 // Append the <div>
 div.appendChild(ul);
-
 const locationDiv = document.createElement('div');
 const location = document.createElement('h2');
 location.textContent = 'Location';
@@ -48,11 +47,7 @@ locationDiv.appendChild(location)
 locationDiv.appendChild(locationDesc);
 div.appendChild(locationDiv);
 
-    
-    
-
-
-    return div; // ✅ Return the created element
+    return div; // 
 };
 
 export { Home };
