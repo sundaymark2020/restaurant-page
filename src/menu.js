@@ -1,4 +1,4 @@
-const menu = function () {
+const getMenu = function () {
   const menuDiv = document.createElement("div");
   const menuHeading = document.createElement("h1");
   menuHeading.textContent = "Menu";
@@ -7,4 +7,4 @@ const menu = function () {
   return menuDiv
 };
 
-export { menu };
+export { getMenu };

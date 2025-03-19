@@ -1,4 +1,4 @@
-const Home = () => {
+const getHome = () => {
     const div = document.createElement('div');
     div.classList.add('heading');
 
@@ -50,4 +50,4 @@ div.appendChild(locationDiv);
     return div; // 
 };
 
-export { Home };
+export { getHome };

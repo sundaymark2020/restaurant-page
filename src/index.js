@@ -1,20 +1,18 @@
 import './style.css'
-import { Home } from './home'
-import { menu } from './menu';
+import { getHome } from './home'
+import { getMenu } from './menu';
 
 const restaurantPage = function() {
     const header = document.getElementById('content');
-     //header.appendChild(Home());
-    //header.appendChild(menu());
-
+     header.appendChild(getHome());
+     
     const btns = document.querySelectorAll('#btn');
     btns.forEach(function (button) {
         button.addEventListener('click',function (e) {
-           // header.innerHTML = ''
-        if (e.target.textContent === 'home') {
-            header.appendChild(Home()); 
-        }else if(e.target.textContent === 'menu'){
-            header.appendChild(Menu())
+        if (e.target.getAttribute('data-btn') === 'home') {
+            header.replaceChildren(getHome()); 
+        }else if(e.target.getAttribute('data-btn')=== 'menu'){
+            header.replaceChildren(getMenu())
         }
             
         })
